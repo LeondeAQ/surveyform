@@ -1,0 +1,282 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id= "title"> LAMBDA AI SURVEY FORM  </h1> 
+    <p id="description"> We are very happy because you are helping us to improve</p>
+
+
+
+    <form id="survey-form">
+      <fieldset> 
+
+
+
+        <label 
+          id="name-label" 
+          for="name"> 
+          Name 
+          <input 
+            id="name" 
+            name="name" 
+            type="text"
+            placeholder="Enter your name" 
+            required />
+        </label>
+
+
+
+        <label 
+          id="lastname-label" 
+          for="last-name"> 
+          Last name 
+          <input 
+            id="last-name" 
+            name="last-name" 
+            type="text"
+            placeholder="Enter your last name" 
+            required />
+        </label>
+
+
+
+        <label
+          id="email-label" 
+          for="email"> 
+          Email 
+          <input 
+            id="email" 
+            name="email" 
+            type="email"
+            placeholder="Enter your email"  
+            required />
+        </label>
+
+
+
+        <label
+          id="number-label" 
+          for="number"> 
+          Age 
+          <input 
+            id="number" 
+            name="number" 
+            type="number"
+            placeholder="Enter your age (years)" 
+            min="12" 
+            max="120"/>
+        </label>
+
+
+
+        <label
+          id="number-label" 
+          for="number"> 
+          Which option describes better your current role? 
+          <select id="dropdown" name="dropdown">
+            <option disabled selected value>(select one)</option>
+            <option value="1">Employee</option>
+            <option value="2">Freelancer</option>
+            <option value="3">Manager</option>
+            <option value="4">Entrepreneur</option>
+            <option value="5">Other</option>
+          </select>
+
+        </label>
+
+        <label> 
+          Would you recommend LAMBDA AI services to a friend?
+          <label for="absolutely">  
+            <input 
+              id="absolutely"
+              value="absolutely"
+              name="recommendation" 
+              type="radio"
+              class="inline"
+              checked
+               />
+              Absolutely
+          </label>
+
+          <label for="perhaps">  
+            <input 
+              id="perhaps" 
+              value="perhaps"
+              name="recommendation" 
+              type="radio"
+              class="inline"
+               />
+              Perhaps
+          </label>
+
+
+          <label for="not-sure">  
+            <input 
+              id="not-sure" 
+              value="not-sure"
+              name="recommendation" 
+              type="radio"
+              class="inline"
+               />
+              Not sure
+          </label>
+        <label>
+
+      </fieldset>
+
+
+      <fieldset>
+        <label
+          id="number-label" 
+          for="number"> 
+          What is your favorite service of LAMBDA AI? 
+          <select id="dropdown" name="dropdown">
+            <option disabled selected value>(select one)</option>
+            <option value="1">LAMBDA AI CHAT</option>
+            <option value="2">SMART KEYWORD SEARCHER</option>
+            <option value="3">TRADING SIMULATOR</option>
+            <option value="4">LAMBDA AI IMAGE GENERATOR</option>
+            <option value="5">Other</option>
+          </select>
+
+        </label>
+
+        <label> 
+          What services would you like to see improved? 
+          <span class="clue">(Check all that apply)</span>
+          <label for="data-visualization">  
+            <input 
+              id="data-visualization"
+              value="data-visualization"
+              name="services" 
+              type="checkbox"
+              class="inline"
+              checked />
+              Data Visualization
+          </label>
+
+          <label for="droids-development">  
+            <input 
+              id="droids-development" 
+              value="droids-development"
+              name="services" 
+              type="checkbox"
+              class="inline" />
+              Droids Development
+          </label>
+
+
+          <label for="courses">  
+            <input 
+              id="courses" 
+              value="courses"
+              name="services" 
+              type="checkbox"
+              class="inline"
+               />
+              Free Training Courses
+          </label>
+
+
+          <label for="courses">  
+            <input 
+              id="courses" 
+              value="courses"
+              name="services" 
+              type="checkbox"
+              class="inline"
+               />
+              Investment Analysis
+          </label>
+
+
+          <label for="chat">  
+            <input 
+              id="chat" 
+              value="chat"
+              name="services" 
+              type="checkbox"
+              class="inline"
+               />
+              Lambda AI CHAT
+          </label>
+
+
+          <label for="SEO">  
+            <input 
+              id="SEO" 
+              value="SEO"
+              name="services" 
+              type="checkbox"
+              class="inline"
+               />
+              Positioning by SEO
+          </label>
+
+
+          <label for="VR">  
+            <input 
+              id="VR" 
+              value="VR"
+              name="services" 
+              type="checkbox"
+              class="inline"
+               />
+              Smilulators with VR
+          </label>
+
+
+
+          <label for="trading">  
+            <input 
+              id="trading" 
+              value="trading"
+              name="services" 
+              type="checkbox"
+              class="inline"
+               />
+              Trading Services with BOTS
+          </label>
+        <label>
+      </fieldset>
+
+
+      <fieldset>
+        <label>
+          Any comments or suggestions?
+          <textarea
+            id="comments"
+            class="comments"
+            name="comments"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </label>
+
+
+        <label
+          for="submit"
+        >
+          <button 
+            type="submit"     
+            id="submit"
+            onclick="showMessage()"
+          >
+            Submit
+          </button>
+
+          <script>
+            function showMessage() {
+              alert("Your form has been submitted successfully. Thanks for your time!");
+            }
+          </script>
+
+        </label>
+      </fieldset>
+
+
+    </form>
+  </body>
+</html>
